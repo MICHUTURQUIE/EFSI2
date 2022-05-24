@@ -1,0 +1,51 @@
+h1 {
+	font-family: Cursive;
+	font-size: 50px;
+    color: rgb(10, 116, 255);
+    text-align: left;
+
+    margin-top: -35px;
+    margin-left: 170px;
+}
+
+p {
+	font-family: Cursive;
+	font-size: 20px;
+    color: white;
+    text-align: center;
+
+}
+
+li {
+
+    margin-top: 20px;
+    margin-left: 165px;
+
+}
+
+
+form {
+
+font-family: Cursive;
+color: white;
+border-radius: var(--border-radius);
+text-align: center;
+
+}
+
+.btn-primary {
+
+    font-family: Cursive;
+    color: rgb(255, 255, 255);
+    background-color: blue;
+    border-radius: 20px;
+    border-color: blue;
+    text-align: center;
+}
+
+
+#MasAlta {
+
+color: white;
+
+}
