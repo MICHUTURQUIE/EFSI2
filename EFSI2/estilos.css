@@ -1,69 +1,52 @@
 h1 {
-	font-family: Cursive;
-	font-size: 50px;
+    font-family: Cursive;
+    font-size: 50px;
     color: rgb(10, 116, 255);
-    text-align: left;
-
-    margin-top: -35px;
-    margin-left: 145px;
-}
-
-p {
-	font-family: Cursive;
-	font-size: 20px;
-    color: white;
     text-align: center;
-
+    padding-right: 150px;
+    padding-left: 230px;
 }
+
 
 a {
-    padding: 15px;    
+    padding: 15px;
     margin-top: 20px;
     margin-left: 140px;
     border-left: 4px solid #0077ff;
-    background-color: #a2c8f385 ;
-    
+    background-color: #a2c8f385;
+
 }
 
-label {
-    padding: 15px;    
+#linea {
+    padding: 15px;
     margin-top: 20px;
     margin-left: 130px;
     border-left: 4px solid #0077ff;
     background-color: #a2c8f385;
-    
-}
-
-div {
-
-    margin-top: 20px;
-    margin-left: 140px;
 
 }
+
+#c {
+    cursor: pointer;
+
+}
+
+
 
 
 form {
 
-font-family: Cursive;
-color: white;
-border-radius: var(--border-radius);
-text-align: center;
-
-}
-
-.btn-primary {
-
-    font-family: Cursive;
-    color: rgb(255, 255, 255);
-    background-color: blue;
-    border-radius: 20px;
-    border-color: blue;
+    color: rgb(79, 105, 255);
     text-align: center;
+    padding: 15px 50px;
+    cursor: pointer;
+    padding-right: 150px;
+    padding-left: 230px;
 }
 
 
 #MasAlta {
 
-color: white;
+    color: white;
 
 }

@@ -3,9 +3,9 @@
 <head>
 
 <title> Recordatorios </title> 
+<script type="text/javascript" src="funciones.js"></script>
 <link rel = "stylesheet" href = "estilos.css" >
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </head>
 
 <body>
@@ -20,27 +20,28 @@
 
 </style> 
 
-<ul class="nav justify-content-end">
-    <li class="nav-item">
-      <a class="nav-link" href="form.html">Agregar Recordatorio</a>
-      <a class="nav-link" href="form.html">Eliminar Recordatorio</a>
-    </li>
-  </ul>
-
-  <br>
+<br><br>
 
 <h1>TODO List</h1>
+
+<form>
+  <div class="form-group">
+    <label >Escribi tu Recordatorio</label>
+    <input type="text" id="aling" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <button type="submit" class="btn btn-primary">Agregar</button>
+</form>
   
-<input type="checkbox" name="1" value="Bike">
-<label for="1" id="linea" > Terminar tarea de lengua</label> 
-<input type="checkbox" name="2" value="Bike">
-<label for="2" id="linea" > Reunion con Jessi</label> <br>
-<input type="checkbox" name="3" value="Bike">
-<label for="3" id="linea" > Clase de Baile</label> <br>
-<input type="checkbox" name="4" value="Bike">
-<label for="4" id="linea" > Averiguar sobre Unity</label> <br>
-<input type="checkbox" name="5" value="Bike">
-<label for="5" id="linea" > Averiguar sobre Unity</label> 
+<div>
+<input type="checkbox" id="c" name="1" value="Bike">
+<label for="1" id="linea"> Terminar tarea de lengua</label>
+<input type="checkbox" id="c" name="1" value="Bike">
+<label for="1" id="linea"> Reunion con Jessi</label>
+<input type="checkbox" id="c" name="1" value="Bike">
+<label for="1" id="linea"> Clase de Baile</label>
+<input type="checkbox" id="c" name="1" value="Bike">
+<label for="1" id="linea"> Averiguar sobre Unity</label>
+
 
 </body>
 
