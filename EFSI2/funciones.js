@@ -1,66 +1,77 @@
-function promedio() {
-    input = document.getElementsByTagName("input");
-    var promedio = 0;
+let list = [];
+let id = 0;
 
-    if (validarNumero2()) {
-        for (let i = 0; i < input.length; i++) {
+let refresh = () => {
+    let ul = document.getElementById("lista")
+    document.getElementById("lista").innerHTML = "";
 
-            promedio = promedio + parseInt(input[i].value);
+    for (let i = 0; i <= list.length; i++) {
+
+        if (list[i].status) {
+            ul.innerHTML += 
             
+            `<li><input class="Input" type="checkbox" onclick="through('${list[i].idCheck}')" id="${list[i].idCheck}">
+                <label id="linea" class="form-check-label" " for="defaultCheck1" id="${list[i].idLabel}">
+                ${list[i].textContent}
+                </label></input>
+                </li> `
         }
 
-        promedio = promedio / input.length;
-        console.log(promedio, input.length);
-        document.getElementById("resultado").innerHTML = promedio.toFixed(2);
-
-        if (promedio >= 6) {
-
-            document.getElementById("resultado").style.color = "green";
-
-        }
         else {
-
-            document.getElementById("resultado").style.color = "red";
-
+            ul.innerHTML += 
+            
+            `<li><input class="Input" type="checkbox" onclick="through('${list[i].idCheck}')" id="${list[i].idCheck}">
+                <label id="linea" class="form-check-label" for="defaultCheck1" id="${list[i].idLabel}">
+                ${list[i].textContent}
+                </label></input>
+                </li>`
+                
         }
-
-    } else {
-        alert("Las notas no son validas.");
     }
+}
+
+
+const through = (idC) => {
+
+    list[idC].status = true;
+    idC = parseInt(idC) + 1;
+
+    document.getElementById(idC).className += "INCORRECTO";
 
 }
 
-function notalta() {
+const agregarL = () => {
 
-    var input = document.getElementsByTagName("input")
-    var notalta = 0;
-    var Materia;
+    let label = document.createElement("label");
+    label.textContent = document.getElementById("escribirAca").value;
 
-    if (validarNumero2()) {
+    if (label.textContent === '') {
+        alert("¡Agrega un recordatorio!");
 
-        for (let i = 0; i < input.length; i++) {
+    }
 
-            if (notalta < parseInt(input[i].value)) {
-
-                notalta = parseInt(input[i].value);
-                Materia = input[i].name;
-                console.log(input[i].name)
-            } 
-            
-            else if (notalta == parseInt(input[i].value)) {
-                Materia = `${Materia}  y  ${input[i].name}`;
-            }
-        }
-
-        document.getElementById("notalta").innerHTML = Materia;
-        document.getElementById("notalta").style.color = "blue";
-
-    } 
-    
     else {
 
-        alert("Las notas no son validas. Cambienlas");
+        let ok1 = {
+            idCheck: id,
+            idLabel: id + 1,
+            textContent: label.textContent,
+            status: false
+        }
 
+        list.push(ok1);
+
+        let ok2 = document.getElementById("listok");
+        ul.innerHTML += `
+        <li><input class="Input" type="checkbox" onclick="through('${work.idCheck}')" id="${work.idCheck}">
+        <label class="form-check-label" for="defaultCheck1" id="${work.idLabel}">
+        ${label.textContent}
+        </label></input>
+        </li>
+        `
+    
+        id = id + 1;
+        refresh();
     }
 
 }
